@@ -16,7 +16,7 @@ result = False
 # function to be used in game_3: Hangman
 def process_guess(letter, board, word):
     result = False
-    for i in range(0,len(board)-1):
+    for i in range(0,len(board)):
         if letter == word[i]:
             result = True
             board[i] = letter
